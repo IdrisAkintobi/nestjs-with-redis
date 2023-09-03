@@ -2,9 +2,9 @@ import { Test, TestingModule } from '@nestjs/testing';
 import { MockProxy, mock } from 'jest-mock-extended';
 
 import { AppModule } from '../../../src/app.module';
-import { RedisService } from '../../../src/application/redis.service';
 import { RedisPrefixEnum } from '../../../src/domain/enum/redis-prefix-enum';
 import { RedisRepository } from '../../../src/infrastructure/redis/repository/redis.repository';
+import { RedisService } from '../../../src/service/redis.service';
 import { productData } from '../../mocks/productData.mock';
 import { mockRedis } from '../../mocks/redis-mock';
 
