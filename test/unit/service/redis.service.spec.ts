@@ -27,8 +27,6 @@ describe('RedisService', () => {
             .useValue(redisRepositoryMock)
             .compile();
 
-        testingModule.createNestApplication();
-
         redisService = testingModule.get<RedisService>(RedisService);
     });
 
