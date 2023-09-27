@@ -2,7 +2,8 @@ import { Inject, Injectable, InternalServerErrorException } from '@nestjs/common
 import { ProductInterface } from '../domain/interface/product.interface';
 import { RedisService } from './redis.service';
 
-// We will be using dummyjson product API to generate dummy data for our products:
+// We will be using dummyjson product API to fetch our products data:
+// This could be any API call or database operations
 const productURL = 'https://dummyjson.com/products/';
 
 @Injectable()

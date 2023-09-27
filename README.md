@@ -51,6 +51,40 @@ $ yarn run test:e2e
 $ yarn run test:cov
 ```
 
+## Code Structure
+
+```bash
+src
+├── app.module.ts
+├── controller
+│   ├── app.controller.ts
+│   ├── dto
+│   │   ├── password-reset-token-request.dto.ts
+│   │   ├── password-update-request.dto.ts
+│   │   └── product.request.dto.ts
+│   ├── password-reset.controller.ts
+│   └── product.controller.ts
+├── domain
+│   ├── enum
+│   │   └── redis-prefix-enum.ts
+│   └── interface
+│       ├── product.interface.ts
+│       ├── redis.repository.interface.ts
+│       └── reset.token.interface.ts
+├── infrastructure
+│   └── redis
+│       ├── redis.client.factory.ts
+│       ├── redis.module.ts
+│       └── repository
+│           └── redis.repository.ts
+├── main.ts
+└── service
+    ├── app.service.ts
+    ├── password-reset.service.ts
+    ├── product.service.ts
+    └── redis.service.ts
+```
+
 ## License
 
 [MIT licensed](LICENSE)

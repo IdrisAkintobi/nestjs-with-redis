@@ -14,7 +14,7 @@ export class PasswordResetService {
         return { token };
     }
 
-    async getTokenUserId(token: string): Promise<string> {
+    async getTokenUserId(token: string): Promise<string | null> {
         return await this.redisService.getResetToken(token);
     }
 }

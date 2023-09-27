@@ -36,7 +36,7 @@ export class RedisService {
         );
     }
 
-    async getResetToken(token: string): Promise<string> {
+    async getResetToken(token: string): Promise<string | null> {
         return await this.redisRepository.get(RedisPrefixEnum.RESET_TOKEN, token);
     }
 }
