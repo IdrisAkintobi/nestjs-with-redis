@@ -87,4 +87,4 @@ src
 
 ## License
 
-[MIT licensed](LICENSE)
+[MIT licensed](LICENSE.txt)
